@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WidgetApply</string>
+    <string name="widget_description">アプリケーションウィジェット</string>
+    <string name="add_widget">ウィジェット追加</string>
+</resources>

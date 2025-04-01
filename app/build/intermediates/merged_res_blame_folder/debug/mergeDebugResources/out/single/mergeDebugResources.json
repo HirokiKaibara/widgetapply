@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/color_chip_text_color.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/color/chip_text_color.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_widget_clock.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/widget_clock.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_widget_weather.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/widget_weather.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_lockscreen.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_lockscreen.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/color_chip_background_color.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/color/chip_background_color.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_icon.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_icon.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_widget_notes.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/widget_notes.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_widget_background.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/widget_background.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_item_widget.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/item_widget.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_live_wallpaper.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_live_wallpaper.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_template.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_template.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_home_preview.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/home_preview.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_ic_person.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_widget_layout.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/widget_layout.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_activity_main.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_all.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_all.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_activity_app_widget_configure.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/activity_app_widget_configure.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_widget_list.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_widget_list.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_category.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_category.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_wallpaper.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_wallpaper.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_widget_preview.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/widget_preview.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/color_category_chip_text_color.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/color/category_chip_text_color.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_ic_favorite.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/ic_favorite.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_home.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/layout_fragment_widget.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/layout/fragment_widget.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_ic_search.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_ic_home.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/xml_app_widget_info.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/xml/app_widget_info.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/color_tab_text_color.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/color/tab_text_color.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_widget_calendar.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/widget_calendar.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-debug-37:/drawable_ic_add.xml.flat",
+        "source": "com.example.widgetapply.app-main-39:/drawable/ic_add.xml"
+    }
+]
