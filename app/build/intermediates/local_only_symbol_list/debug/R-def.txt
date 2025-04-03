@@ -7,6 +7,8 @@ color chip_background_color
 color chip_text_color
 color gray
 color ic_launcher_background
+color pink_100
+color pink_200
 color pink_500
 color purple_200
 color purple_500
@@ -22,6 +24,7 @@ drawable ic_add
 drawable ic_contact
 drawable ic_download
 drawable ic_favorite
+drawable ic_filter
 drawable ic_help
 drawable ic_home
 drawable ic_launcher_background
@@ -32,6 +35,7 @@ drawable ic_notification
 drawable ic_payment
 drawable ic_person
 drawable ic_search
+drawable search_background
 drawable widget_background
 drawable widget_calendar
 drawable widget_clock
@@ -41,6 +45,8 @@ drawable widget_weather
 id bottomNavigation
 id buttonConfirm
 id chipGroup
+id favoriteRecyclerView
+id filterButton
 id homeScreensRecyclerView
 id itemBackground
 id itemDescription
@@ -56,6 +62,7 @@ id navigation_search
 id popularHomeRecycler
 id popularLockRecycler
 id popularWidgetRecycler
+id searchEditText
 id tabLayout
 id viewPager
 id widgetHomeDescription
@@ -79,8 +86,12 @@ layout fragment_template
 layout fragment_wallpaper
 layout fragment_widget
 layout item_container
+layout item_favorite
 layout item_search_result
 layout item_widget
+layout item_widget_container
+layout item_widget_large_container
+layout item_widget_small_container
 layout widget_home_preview
 layout widget_layout
 menu bottom_navigation_menu
@@ -110,6 +121,7 @@ string payment_info
 string popular_home_screens
 string popular_lock_screens
 string popular_widgets
+string search_hint
 string title_all
 string title_favorite
 string title_home

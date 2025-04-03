@@ -23,22 +23,22 @@ class AllFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // ホーム画面セクション（ピンク系の色）
+        // ホーム画面セクション（薄いピンク系の色）
         view.findViewById<RecyclerView>(R.id.homeScreensRecyclerView).apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = ContainerAdapter(Color.parseColor("#FF4081"))
+            adapter = ContainerAdapter(Color.parseColor("#FFB6C1"))  // LightPink
         }
 
-        // ウィジェットセクション（青系の色）
+        // ウィジェットセクション（薄い青系の色）
         view.findViewById<RecyclerView>(R.id.widgetsRecyclerView).apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = ContainerAdapter(Color.parseColor("#2196F3"))
+            adapter = ContainerAdapter(Color.parseColor("#87CEEB"), ContainerAdapter.ItemType.WIDGET)  // SkyBlue
         }
 
-        // ロック画面セクション（紫系の色）
+        // ロック画面セクション（薄い紫系の色）
         view.findViewById<RecyclerView>(R.id.lockScreensRecyclerView).apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = ContainerAdapter(Color.parseColor("#9C27B0"))
+            adapter = ContainerAdapter(Color.parseColor("#DDA0DD"))  // Plum
         }
     }
 }

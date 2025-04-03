@@ -9,5 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#757575</color>
     <color name="pink_500">#E91E63</color>
+    <color name="pink_200">#F48FB1</color>  <!-- 薄いピンク色を追加 -->
+    <color name="pink_100">#F8BBD0</color>  <!-- さらに薄いピンク色を追加 -->
     <color name="tab_indicator_color">#E91E63</color>
 </resources>

@@ -20,6 +20,10 @@
         "source": "com.example.widgetapply.app-main-33:/drawable/ic_contact.xml"
     },
     {
+        "merged": "com.example.widgetapply.app-merged_res-31:/drawable_ic_filter.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/drawable/ic_filter.xml"
+    },
+    {
         "merged": "com.example.widgetapply.app-merged_res-31:/color_tab_text_color.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/color/tab_text_color.xml"
     },
@@ -120,6 +124,14 @@
         "source": "com.example.widgetapply.app-main-33:/drawable/ic_home.xml"
     },
     {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_widget_container.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/item_widget_container.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_widget_small_container.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/item_widget_small_container.xml"
+    },
+    {
         "merged": "com.example.widgetapply.app-merged_res-31:/drawable_ic_download.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/drawable/ic_download.xml"
     },
@@ -192,8 +204,20 @@
         "source": "com.example.widgetapply.app-main-33:/color/category_chip_text_color.xml"
     },
     {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_widget_large_container.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/item_widget_large_container.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/drawable_search_background.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/drawable/search_background.xml"
+    },
+    {
         "merged": "com.example.widgetapply.app-merged_res-31:/drawable_ic_logout.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_favorite.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/item_favorite.xml"
     },
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/drawable_ic_payment.xml.flat",

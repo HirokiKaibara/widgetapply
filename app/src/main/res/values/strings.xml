@@ -43,4 +43,5 @@
     <string name="contact">お問い合わせ</string>
     <string name="logout">ログアウト</string>
     <string name="title_favorite">お気に入り</string>
+    <string name="search_hint">検索</string>
 </resources>

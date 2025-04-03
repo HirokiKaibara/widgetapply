@@ -2,6 +2,7 @@
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.widgetapply.adapter.ViewPagerAdapter
 import com.example.widgetapply.ui.fragments.mypage.MypageFragment
@@ -13,7 +14,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewPager: ViewPager2
-    private lateinit var mainContent: ViewPager2
     private lateinit var tabLayout: TabLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,28 +35,25 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.navigation_search -> {
                     hideMainContent()
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainContainer, SearchFragment())
-                        .commit()
+                    replaceFragment(SearchFragment())
                     true
                 }
                 R.id.navigation_favorite -> {
                     hideMainContent()
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainContainer, FavoriteFragment())
-                        .commit()
+                    replaceFragment(FavoriteFragment())
                     true
                 }
                 R.id.navigation_mypage -> {
                     hideMainContent()
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainContainer, MypageFragment())
-                        .commit()
+                    replaceFragment(MypageFragment())
                     true
                 }
                 else -> false
             }
         }
+
+        // 初期表示
+        showMainContent()
     }
 
     private fun setupViewPager() {
@@ -75,11 +72,20 @@ class MainActivity : AppCompatActivity() {
         }.attach()
     }
 
+    private fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.mainContainer, fragment)
+            .addToBackStack(null)  // バックスタックに追加
+            .commitAllowingStateLoss()
+        supportFragmentManager.executePendingTransactions()
+    }
+
     private fun clearMainContainer() {
         supportFragmentManager.findFragmentById(R.id.mainContainer)?.let {
             supportFragmentManager.beginTransaction()
                 .remove(it)
-                .commit()
+                .commitAllowingStateLoss()
+            supportFragmentManager.executePendingTransactions()
         }
     }
 
