@@ -23,44 +23,58 @@ class WidgetFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // 音楽セクション（紫系の色）- 1枚目が大きい
+        val displayMetrics = resources.displayMetrics
+        val screenWidth = displayMetrics.widthPixels
+        val standardSize = (screenWidth - dpToPx(48)) / 4 // 基本サイズ（画面幅の1/4）
+
+        // 音楽セクション
         setupRecyclerView(
             R.id.musicRecyclerView,
-            Color.parseColor("#E6E6FA"),
-            214, 100,  // 1枚目のサイズ
-            102, 100   // 2枚目以降のサイズ
+            Color.parseColor("#FFE4E1"), // ミスティローズ
+            (screenWidth * 2/3), // 最初のカードは画面幅の2/3
+            standardSize,    //
+            standardSize,        // 他のカードは標準サイズ
+            standardSize
         )
 
-        // 写真セクション（青系の色）- すべて同じサイズ
+        // 写真セクション
         setupRecyclerView(
             R.id.photoRecyclerView,
-            Color.parseColor("#ADD8E6"),
-            100, 100,
-            100, 100
+            Color.parseColor("#E6E6FA"), // ラベンダー
+            standardSize,
+            standardSize,
+            standardSize,
+            standardSize
         )
 
-        // スケジュールセクション（緑系の色）- すべて同じサイズ
+        // スケジュールセクション
         setupRecyclerView(
             R.id.scheduleRecyclerView,
-            Color.parseColor("#98FB98"),
-            280, 140,
-            280, 140
+            Color.parseColor("#E0FFFF"), // ライトシアン
+            standardSize * 2,    // 横長（標準の2倍）
+            (standardSize * 1.2).toInt(), // 高さは1.2倍
+            standardSize * 2,
+            (standardSize * 1.2).toInt()
         )
 
-        // 占いセクション（ピンク系の色）- すべて同じサイズ
+        // 占いセクション
         setupRecyclerView(
             R.id.fortuneRecyclerView,
-            Color.parseColor("#FFB6C1"),
-            100, 100,
-            100, 100
+            Color.parseColor("#FFF0F5"), // ラベンダーブラッシュ
+            standardSize,
+            standardSize,
+            standardSize,
+            standardSize
         )
 
-        // 人気のウィジェットセクション（オレンジ系の色）- すべて同じサイズ
+        // 人気のウィジェットセクション
         setupRecyclerView(
             R.id.popularWidgetRecyclerView,
-            Color.parseColor("#FFDAB9"),
-            100, 100,
-            100, 100
+            Color.parseColor("#F0F8FF"), // アリスブルー
+            standardSize,
+            standardSize,
+            standardSize,
+            standardSize
         )
     }
 
@@ -82,5 +96,9 @@ class WidgetFragment : Fragment() {
                 otherItemHeight
             )
         }
+    }
+
+    private fun dpToPx(dp: Int): Int {
+        return (dp * resources.displayMetrics.density).toInt()
     }
 }

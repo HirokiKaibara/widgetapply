@@ -3445,6 +3445,8 @@ id navigation_search
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id newLockscreenRecyclerView
+id newWallpaperRecyclerView
 id noScroll
 id noState
 id none
@@ -3488,6 +3490,8 @@ id photoRecyclerView
 id pin
 id popularHomeRecycler
 id popularLockRecycler
+id popularLockscreenRecyclerView
+id popularWallpaperRecyclerView
 id popularWidgetRecycler
 id popularWidgetRecyclerView
 id position
@@ -3566,6 +3570,8 @@ id staticLayout
 id staticPostLayout
 id stop
 id stretch
+id stylishLockscreenRecyclerView
+id stylishWallpaperRecyclerView
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -3631,6 +3637,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wallpaperPreview
 id west
 id widgetContainer
 id widgetHomeDescription
@@ -3796,6 +3803,7 @@ layout ime_secondary_split_test_activity
 layout item_container
 layout item_favorite
 layout item_search_result
+layout item_wallpaper_card
 layout item_widget
 layout item_widget_card
 layout item_widget_container

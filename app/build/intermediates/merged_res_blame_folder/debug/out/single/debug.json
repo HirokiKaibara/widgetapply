@@ -238,5 +238,9 @@
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/drawable_widget_preview.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/drawable/widget_preview.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_wallpaper_card.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/item_wallpaper_card.xml"
     }
 ]
