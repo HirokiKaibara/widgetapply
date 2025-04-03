@@ -3317,6 +3317,7 @@ id fixed
 id flip
 id floating
 id forever
+id fortuneRecyclerView
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3429,6 +3430,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id musicRecyclerView
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3482,10 +3484,12 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id photoRecyclerView
 id pin
 id popularHomeRecycler
 id popularLockRecycler
 id popularWidgetRecycler
+id popularWidgetRecyclerView
 id position
 id postLayout
 id pressed
@@ -3506,6 +3510,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scheduleRecyclerView
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3627,6 +3632,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id west
+id widgetContainer
 id widgetHomeDescription
 id widgetHomeImage
 id widgetHomeTitle
@@ -3791,8 +3797,10 @@ layout item_container
 layout item_favorite
 layout item_search_result
 layout item_widget
+layout item_widget_card
 layout item_widget_container
 layout item_widget_large_container
+layout item_widget_section
 layout item_widget_small_container
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

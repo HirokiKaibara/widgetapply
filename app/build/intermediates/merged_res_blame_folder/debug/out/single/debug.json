@@ -4,6 +4,10 @@
         "source": "com.example.widgetapply.app-main-33:/color/chip_text_color.xml"
     },
     {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_widget_card.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/item_widget_card.xml"
+    },
+    {
         "merged": "com.example.widgetapply.app-merged_res-31:/color_bottom_nav_color.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/color/bottom_nav_color.xml"
     },
@@ -162,6 +166,10 @@
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/drawable_ic_account.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/drawable/ic_account.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_widget_section.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/item_widget_section.xml"
     },
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/layout_activity_app_widget_configure.xml.flat",
