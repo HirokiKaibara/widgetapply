@@ -32,4 +32,15 @@
     <string name="popular_widgets">人気のウィジェット</string>
     <string name="popular_lock_screens">人気のロック画面</string>
     <string name="more">もっと見る ></string>
+    <!-- MyPage -->
+    <string name="title_mypage">マイページ</string>
+    <string name="download_history">ダウンロード履歴</string>
+    <string name="account">アカウント</string>
+    <string name="fanlink">Fanlink（連携）</string>
+    <string name="payment_info">決済情報</string>
+    <string name="notification">通知</string>
+    <string name="help">ヘルプ</string>
+    <string name="contact">お問い合わせ</string>
+    <string name="logout">ログアウト</string>
+    <string name="title_favorite">お気に入り</string>
 </resources>
