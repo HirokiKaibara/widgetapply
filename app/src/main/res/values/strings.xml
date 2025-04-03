@@ -1,5 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">WidgetApply</string>
-    <string name="widget_description">アプリケーションウィジェット</string>
-    <string name="add_widget">ウィジェット追加</string>
+    <string name="app_logo">Logo</string>
+    
+    <!-- Tab Titles -->
+    <string name="title_home">ホーム</string>
+    <string name="title_all">全て</string>
+    <string name="title_template">テンプレート</string>
+    <string name="title_widget">ウィジェット</string>
+    <string name="title_icon">アイコン</string>
+    <string name="title_wallpaper">壁紙</string>
+    <string name="title_lockscreen">ロック画面</string>
+    <string name="title_live_wallpaper">ライブ壁紙</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="navigation_home">ホーム</string>
+    <string name="navigation_search">検索</string>
+    <string name="navigation_favorite">お気に入り</string>
+    <string name="navigation_mypage">マイページ</string>
+    
+    <!-- Chips -->
+    <string name="chip_oshare">おしゃれ</string>
+    <string name="chip_simple">シンプル</string>
+    <string name="chip_white">白</string>
+    <string name="chip_monokuro">モノクロ</string>
+    <string name="chip_kawaii">かわいい</string>
+    <string name="chip_kirei">きれい</string>
+
+    <!-- Section Titles -->
+    <string name="popular_home_screens">人気のホーム画面</string>
+    <string name="popular_widgets">人気のウィジェット</string>
+    <string name="popular_lock_screens">人気のロック画面</string>
+    <string name="more">もっと見る ></string>
 </resources>
