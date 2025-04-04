@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- ヘッダー -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="タブテスト"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5" />
+
+    <!-- タブコンテナ -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <!-- タブバー -->
+        <HorizontalScrollView
+            android:id="@+id/tabScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/tabContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tabAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全て"
+                    android:textColor="@color/pink_500"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tabTemplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="テンプレート"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tabWidget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ウィジェット"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tabIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="アイコン"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tabWallpaper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="壁紙"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tabLockscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ロック画面"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tabLiveWallpaper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ライブ壁紙"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        
+        <!-- タブインジケーター -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent" />
+                
+            <View
+                android:id="@+id/tabIndicator"
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:background="@color/pink_500" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5" />
+
+    <!-- コンテンツ -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/contentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全てのコンテンツがここに表示されます"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

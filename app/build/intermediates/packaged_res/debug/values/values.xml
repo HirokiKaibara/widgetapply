@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="gray">#757575</color>
+    <color name="gray_700">#757575</color>
     <color name="ic_launcher_background">#FFFFFF</color>
     <color name="pink_100">#F8BBD0</color>
     <color name="pink_200">#F48FB1</color>
@@ -57,6 +58,10 @@
         <item name="android:paddingTop">2dp</item>
         <item name="android:paddingBottom">2dp</item>
         <item name="android:minHeight">28dp</item>
+    </style>
+    <style name="SquareImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
     </style>
     <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">14sp</item>

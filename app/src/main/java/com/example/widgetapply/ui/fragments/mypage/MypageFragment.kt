@@ -4,8 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import com.example.widgetapply.R
+import com.example.widgetapply.ui.fragments.mypage.history.DownloadHistoryFragment
+import com.example.widgetapply.ui.fragments.mypage.payment.PaymentInfoFragment
+import com.example.widgetapply.ui.fragments.mypage.account.AccountFragment
+import com.example.widgetapply.ui.fragments.mypage.fanlink.FanlinkFragment
+import com.example.widgetapply.ui.fragments.mypage.tab.TabHistoryFragment
 
 class MypageFragment : Fragment() {
     override fun onCreateView(
@@ -15,4 +21,66 @@ class MypageFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_mypage, container, false)
     }
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        
+        // ダウンロード履歴への遷移
+        view.findViewById<LinearLayout>(R.id.downloadHistoryLayout).setOnClickListener {
+            navigateToDownloadHistory()
+        }
+        
+        // アカウント設定への遷移
+        view.findViewById<LinearLayout>(R.id.accountLayout).setOnClickListener {
+            navigateToAccount()
+        }
+        
+        // Fanlink（連携）への遷移
+        view.findViewById<LinearLayout>(R.id.fanlinkLayout).setOnClickListener {
+            navigateToFanlink()
+        }
+        
+        // 決済情報への遷移
+        view.findViewById<LinearLayout>(R.id.paymentLayout).setOnClickListener {
+            navigateToPaymentInfo()
+        }
+    }
+    
+    private fun navigateToDownloadHistory() {
+        val fragment = DownloadHistoryFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.mainContainer, fragment)
+            .addToBackStack("downloadHistory")
+            .commit()
+    }
+    
+    private fun navigateToAccount() {
+        val fragment = AccountFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.mainContainer, fragment)
+            .addToBackStack("account")
+            .commit()
+    }
+    
+    private fun navigateToFanlink() {
+        val fragment = FanlinkFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.mainContainer, fragment)
+            .addToBackStack("fanlink")
+            .commit()
+    }
+    
+    private fun navigateToPaymentInfo() {
+        val fragment = PaymentInfoFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.mainContainer, fragment)
+            .addToBackStack("payment")
+            .commit()
+    }
 }
+
+
+
+
+
+

@@ -697,6 +697,7 @@
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="gray">#757575</color>
+    <color name="gray_700">#757575</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="ic_launcher_background">#FFFFFF</color>
@@ -6032,6 +6033,10 @@
     <item name="cornerSizeBottomLeft">@dimen/mtrl_textinput_box_corner_radius_small</item>
     <item name="cornerSizeBottomRight">@dimen/mtrl_textinput_box_corner_radius_small</item>
   </style>
+    <style name="SquareImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
     <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">normal</item>

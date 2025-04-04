@@ -5,23 +5,27 @@
     android:orientation="vertical"
     android:background="@color/white">
 
-    <!-- タイトル -->
+    <!-- 繧ｿ繧､繝医Ν -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_mypage"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:gravity="center"
         android:padding="16dp" />
 
-    <!-- ダウンロード履歴 -->
+    <!-- 繝繧ｦ繝ｳ繝ｭ繝ｼ繝牙ｱ･豁ｴ -->
     <LinearLayout
+        android:id="@+id/downloadHistoryLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:background="@android:color/white">
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true">
 
         <ImageView
             android:layout_width="24dp"
@@ -33,6 +37,7 @@
             android:layout_height="wrap_content"
             android:text="@string/download_history"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:layout_marginStart="16dp" />
     </LinearLayout>
 
@@ -41,17 +46,20 @@
         android:layout_height="8dp"
         android:background="#F5F5F5" />
 
-    <!-- アカウント設定グループ -->
+    <!-- 繧｢繧ｫ繧ｦ繝ｳ繝郁ｨｭ螳壹げ繝ｫ繝ｼ繝・-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/accountLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
@@ -63,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/account"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
 
@@ -72,10 +81,13 @@
             android:background="#F5F5F5" />
 
         <LinearLayout
+            android:id="@+id/fanlinkLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
@@ -87,6 +99,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/fanlink"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
 
@@ -96,10 +109,13 @@
             android:background="#F5F5F5" />
 
         <LinearLayout
+            android:id="@+id/paymentLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
@@ -111,6 +127,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/payment_info"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
 
@@ -135,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/notification"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
     </LinearLayout>
@@ -144,7 +162,7 @@
         android:layout_height="8dp"
         android:background="#F5F5F5" />
 
-    <!-- ヘルプ・お問い合わせグループ -->
+    <!-- 繝倥Ν繝励・縺雁撫縺・粋繧上○繧ｰ繝ｫ繝ｼ繝・-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -166,6 +184,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/help"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
 
@@ -190,6 +209,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/contact"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
     </LinearLayout>
@@ -199,7 +219,7 @@
         android:layout_height="8dp"
         android:background="#F5F5F5" />
 
-    <!-- ログアウト -->
+    <!-- 繝ｭ繧ｰ繧｢繧ｦ繝・-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
