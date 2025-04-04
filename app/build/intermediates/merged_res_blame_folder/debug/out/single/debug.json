@@ -48,6 +48,10 @@
         "source": "com.example.widgetapply.app-main-33:/layout/fragment_lockscreen.xml"
     },
     {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_notification.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/item_notification.xml"
+    },
+    {
         "merged": "com.example.widgetapply.app-merged_res-31:/color_chip_background_color.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/color/chip_background_color.xml"
     },
@@ -86,6 +90,10 @@
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_fragment_notification.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/fragment_notification.xml"
     },
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/layout_fragment_mypage.xml.flat",
@@ -134,6 +142,10 @@
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/layout_fragment_category.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/layout/fragment_category.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/drawable_button_pink_rounded.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/drawable/button_pink_rounded.xml"
     },
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/drawable_ic_link.xml.flat",
@@ -188,6 +200,10 @@
         "source": "com.example.widgetapply.app-main-33:/layout/fragment_live_wallpaper.xml"
     },
     {
+        "merged": "com.example.widgetapply.app-merged_res-31:/drawable_ic_arrow_up.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/drawable/ic_arrow_up.xml"
+    },
+    {
         "merged": "com.example.widgetapply.app-merged_res-31:/layout_item_container.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/layout/item_container.xml"
     },
@@ -222,6 +238,10 @@
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/drawable_home_preview.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/drawable/home_preview.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_fragment_help.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/fragment_help.xml"
     },
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/layout_fragment_wallpaper.xml.flat",
@@ -270,6 +290,14 @@
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/layout_fragment_tab_history.xml.flat",
         "source": "com.example.widgetapply.app-main-33:/layout/fragment_tab_history.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/drawable_ic_arrow_down.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/drawable/ic_arrow_down.xml"
+    },
+    {
+        "merged": "com.example.widgetapply.app-merged_res-31:/layout_fragment_contact.xml.flat",
+        "source": "com.example.widgetapply.app-main-33:/layout/fragment_contact.xml"
     },
     {
         "merged": "com.example.widgetapply.app-merged_res-31:/color_category_chip_text_color.xml.flat",

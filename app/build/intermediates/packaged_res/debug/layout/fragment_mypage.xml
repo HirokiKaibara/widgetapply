@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:background="@color/white">
 
-    <!-- 繧ｿ繧､繝医Ν -->
+    <!-- タイトル -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
         android:gravity="center"
         android:padding="16dp" />
 
-    <!-- 繝繧ｦ繝ｳ繝ｭ繝ｼ繝牙ｱ･豁ｴ -->
+    <!-- ダウンロード履歴 -->
     <LinearLayout
         android:id="@+id/downloadHistoryLayout"
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
         android:layout_height="8dp"
         android:background="#F5F5F5" />
 
-    <!-- 繧｢繧ｫ繧ｦ繝ｳ繝郁ｨｭ螳壹げ繝ｫ繝ｼ繝・-->
+    <!-- アカウント設定グルーチE-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -137,10 +137,13 @@
             android:background="#F5F5F5" />
 
         <LinearLayout
+            android:id="@+id/notificationLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
@@ -155,6 +158,35 @@
                 android:textColor="@color/black"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F5F5" />
+
+        <LinearLayout
+            android:id="@+id/contactLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_contact"
+                android:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
     </LinearLayout>
 
     <View
@@ -162,17 +194,20 @@
         android:layout_height="8dp"
         android:background="#F5F5F5" />
 
-    <!-- 繝倥Ν繝励・縺雁撫縺・粋繧上○繧ｰ繝ｫ繝ｼ繝・-->
+    <!-- ヘルプ・お問い合わせグループ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/helpLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
@@ -194,22 +229,26 @@
             android:background="#F5F5F5" />
 
         <LinearLayout
+            android:id="@+id/contactLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_contact" />
+                android:src="@drawable/ic_logout"
+                android:tint="@color/pink_500" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/contact"
+                android:text="@string/logout"
                 android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textColor="@color/pink_500"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
     </LinearLayout>
@@ -219,25 +258,9 @@
         android:layout_height="8dp"
         android:background="#F5F5F5" />
 
-    <!-- 繝ｭ繧ｰ繧｢繧ｦ繝・-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_logout"
-            android:tint="@color/pink_500" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/logout"
-            android:textSize="16sp"
-            android:textColor="@color/pink_500"
-            android:layout_marginStart="16dp" />
-    </LinearLayout>
+    
 </LinearLayout>
+
+
+
+

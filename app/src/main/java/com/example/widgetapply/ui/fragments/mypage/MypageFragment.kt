@@ -12,6 +12,9 @@ import com.example.widgetapply.ui.fragments.mypage.payment.PaymentInfoFragment
 import com.example.widgetapply.ui.fragments.mypage.account.AccountFragment
 import com.example.widgetapply.ui.fragments.mypage.fanlink.FanlinkFragment
 import com.example.widgetapply.ui.fragments.mypage.tab.TabHistoryFragment
+import com.example.widgetapply.ui.fragments.mypage.notification.NotificationFragment
+import com.example.widgetapply.ui.fragments.mypage.help.HelpFragment
+import com.example.widgetapply.ui.fragments.mypage.contact.ContactFragment
 
 class MypageFragment : Fragment() {
     override fun onCreateView(
@@ -43,6 +46,21 @@ class MypageFragment : Fragment() {
         // 決済情報への遷移
         view.findViewById<LinearLayout>(R.id.paymentLayout).setOnClickListener {
             navigateToPaymentInfo()
+        }
+        
+        // 通知画面への遷移
+        view.findViewById<LinearLayout>(R.id.notificationLayout).setOnClickListener {
+            navigateToNotification()
+        }
+        
+        // ヘルプページへの遷移
+        view.findViewById<LinearLayout>(R.id.helpLayout).setOnClickListener {
+            navigateToHelp()
+        }
+        
+        // お問い合わせページへの遷移
+        view.findViewById<LinearLayout>(R.id.contactLayout).setOnClickListener {
+            navigateToContact()
         }
     }
     
@@ -77,10 +95,28 @@ class MypageFragment : Fragment() {
             .addToBackStack("payment")
             .commit()
     }
+    
+    private fun navigateToNotification() {
+        val fragment = NotificationFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.mainContainer, fragment)
+            .addToBackStack("notification")
+            .commit()
+    }
+    
+    private fun navigateToHelp() {
+        val fragment = HelpFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.mainContainer, fragment)
+            .addToBackStack("help")
+            .commit()
+    }
+    
+    private fun navigateToContact() {
+        val fragment = ContactFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.mainContainer, fragment)
+            .addToBackStack("contact")
+            .commit()
+    }
 }
-
-
-
-
-
-
